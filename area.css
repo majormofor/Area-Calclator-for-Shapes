@@ -1,0 +1,18 @@
+body {
+  background-color: aliceblue;
+}
+
+.hidden {
+  display: none;
+}
+
+.answer {
+  margin-top: 50px;
+}
+
+.h1 {
+  text-align: center;
+  margin: 30px;
+  border: 3px;
+  border-style: double;
+}

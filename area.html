@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="area.css" />
+    <title>Area of the Shapes</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">Welcome to Area Calculator of shapes</h1>
+      <div class="option">
+        <h4>Shape:</h4>
+
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Which shape Area do you want?</option>
+          <option value="square">Square</option>
+          <option value="rectangle">Rectangle</option>
+          <option value="triangle">Triangle</option>
+          <option value="circle">Circle</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- Shape input -->
+      <div class="shape input">
+        <div class="square hidden">
+          <h4>Length of the Square:</h4>
+          <input
+            class="mb-3 form-control"
+            type="number"
+            name="length"
+            id="square"
+            placeholder="Enter the Length of a square"
+          />
+        </div>
+        <!--           Area of the rectangle
+ -->
+        <div class="rectangle hidden">
+          <h4>Length of the Rectangle:</h4>
+
+          <input
+            class="mb-3 form-control"
+            type="number"
+            name="length"
+            id="recLength"
+            placeholder="Enter the Length of the rectangle"
+          />
+          <h4>Breadth of the Rectangle:</h4>
+
+          <input
+            class="mb-3 form-control"
+            type="number"
+            name="length"
+            id="recBreadth"
+            placeholder="Enter the breadth of the rectangle "
+          />
+        </div>
+        <!-- Triangle -->
+        <div class="triangle hidden">
+          <h4>Base of the Triangle:</h4>
+
+          <input
+            class="mb-3 form-control"
+            type="number"
+            name=""
+            id="baseInput"
+            placeholder="Enter the base of the triangle"
+          />
+          <h4>Height of the Triangle:</h4>
+
+          <input
+            class="mb-3 form-control"
+            type="number"
+            name="length"
+            id="heightInput"
+            placeholder="Enter the height of the triangle "
+          />
+        </div>
+
+        <!-- Circle -->
+        <div class="circle hidden">
+          <h4>Radius of the Circle:</h4>
+
+          <input
+            class="mb-3 form-control"
+            type="number"
+            name=""
+            id="radiusInput"
+            placeholder="Enter the radius"
+          />
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        class="submit button btn btn-primary"
+        id="squareButton"
+      >
+        Submit
+      </button>
+
+      <div class="answer hidden" id="answer">
+        <div class="card">
+          <div class="card-body">
+            <h3 id="areaText">The area of the shape is 78</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="area.js"></script>
+  </body>
+</html>
